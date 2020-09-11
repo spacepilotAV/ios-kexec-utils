@@ -22,6 +22,7 @@
  * Requires iOS 6.x or higher. (This version only.)
  * 
  * Designed to chain both iBSS + iBEC, not just one.
+ * Does not auto enter deepsleep, so that another utility in alphac3ntauri can.
  *
  * Remap addresses:
  * 0x7fe00000 -> 0x9fe00000 (0x5fe00000) iBSS (jump-to)
