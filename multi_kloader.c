@@ -1180,7 +1180,8 @@ int main(int argc, char *argv[])
         sync();
     sleep(1);
 
-
+/*
+// very early boot can't make this work idfk
     while (1) {
         printf("Magic happening now. (attempted!)\n");
         mach_port_t fb = IOPMFindPowerManagement(MACH_PORT_NULL);
@@ -1194,6 +1195,7 @@ int main(int argc, char *argv[])
         }
         sleep(3);
     }
+*/
 
     return 0;
 }
