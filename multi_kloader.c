@@ -29,8 +29,10 @@
  * 0x7fd00000 -> 0x9fd00000 (0x5fd00000) iBEC
  * 
  *
- * xcrun -sdk iphoneos clang kloader.c -arch armv7 -framework IOKit -framework CoreFoundation -no-integrated-as \
- *     -DINLINE_IT_ALL=1 -Wall -o kloader -miphoneos-version-min=6.0; ldid -Stfp0.plist kloader
+ * compile with: 
+ * xcrun -sdk iphoneos clang multi_kloader.c -arch armv7 -framework IOKit 
+ *   -framework CoreFoundation -Wall -miphoneos-version-min=6.0 -o multi_kloader -v -I .
+ *
  */
 
 #include <mach/mach.h>
